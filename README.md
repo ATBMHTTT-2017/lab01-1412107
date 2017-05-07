@@ -3,7 +3,7 @@
 **Name of your app** là một bài tập 1 tại môn ATBMHTTT. Bài tập yêu cầu sinh viên tạo cơ sở dữ liệu, phân quyền theo các yêu cầu.
 
 Thành viên:
-* [ ] **MSSV1** Tên sinh viên 1 (tên tài khoản github)
+* [ ] **1412107** phandung1349 (tên tài khoản github)
 * [ ] **MSSV2** Tên sinh viên 2 (tên tài khoản github)
 * [ ] **MSSV3** Tên sinh viên 2 (tên tài khoản github)
 
@@ -13,14 +13,14 @@ Sinh viên check vào các mục bên dưới và ghi mã sinh viên đã làm v
 
 Yêu cầu **GIT**
 * [ ] Có sử dụng GIT.
-* [ ] Sử dụng GIT theo Centralized Workflow.
+* [ v] Sử dụng GIT theo Centralized Workflow.
 * [ ] Sử dụng GIT theo Feature Branch Workflow.
 * [ ] Sử dụng GIT theo Gitflow Workflow.
 
 Yêu cầu **bắt buộc**
-* [ ] Viết script tạo cấu trúc cơ sở dữ liệu (**MSSV**)
-* [ ] Viết script thêm dữ liệu (**MSSV**)
-* [ ] Tạo tài khoản cho các nhân viên trong bảng Nhân Viên. Tên tài khoản trùng với mã nhân viên. Tạo ít nhất 5 tài khoản cho mỗi vị trí: trưởng dự án, trưởng phòng, trưởng chi nhánh, nhân viên, giám đốc và ít nhất 5 dòng cho các bảng dữ liệu còn lại. (**MSSV**)
+* [ ] Viết script tạo cấu trúc cơ sở dữ liệu (**1412107**)
+* [ ] Viết script thêm dữ liệu (**1412107**)
+* [ ] Tạo tài khoản cho các nhân viên trong bảng Nhân Viên. Tên tài khoản trùng với mã nhân viên. Tạo ít nhất 5 tài khoản cho mỗi vị trí: trưởng dự án, trưởng phòng, trưởng chi nhánh, nhân viên, giám đốc và ít nhất 5 dòng cho các bảng dữ liệu còn lại. (**1412107**)
 * [ ] Tạo các role cho các vị trí phù hợp cho công ty. (**MSSV**)
 * [ ] Chỉ trưởng phòng được phép cập nhật và thêm thông tin vào dự án (DAC). (**MSSV**)
 * [ ] Giám đốc được phép xem thông tin dự án gồm (mã dự án, tên dự án, kinh phí, tên phòng chủ trì, tên chi nhánh chủ trì, tên trưởng dự án và tổng chi) (DAC). (**MSSV**)
