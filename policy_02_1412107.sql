@@ -17,4 +17,5 @@ grant select on VIEW_DUAN to ROLE_GIAMDOC;
 --grant role ROLE_GIAMDOC to GIAMDOC: GD001, GD002, GD003, GD004, GD005
 --connect sys
 grant ROLE_GIAMDOC to GD001, GD002, GD003, GD004, GD005;
-
+--connect as GD001, GD002, GD003, GD004, GD005
+select * from ownerDBCONGTY.VIEW_DUAN;
