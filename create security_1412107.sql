@@ -89,3 +89,9 @@ GRANT connect, resource to GD004;
 --5. giam doc 5
 GRANT CREATE SESSION TO GD005 IDENTIFIED BY GD005;
 GRANT connect, resource to GD005;
+
+--Create the administrative user, who will administer policies, procedures
+--connect as sys
+GRANT CREATE SESSION, CREATE ANY CONTEXT, CREATE PROCEDURE, CREATE TRIGGER, ADMINISTER DATABASE TRIGGER TO sysadmin IDENTIFIED BY sysadmin;
+GRANT EXECUTE ON DBMS_SESSION TO sysadmin;
+GRANT EXECUTE ON DBMS_RLS TO sysadmin;
