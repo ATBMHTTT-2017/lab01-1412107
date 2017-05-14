@@ -24,7 +24,7 @@ CREATE OR REPLACE PACKAGE BODY chitieu_ctx_pkg IS
   dangnhap := SYS_CONTEXT('USERENV', 'SESSION_USER');
   if dangnhap in(select truongDUAN from ownerDBCONGTY.DUAN_1412107 ) then 
      SELECT ownerDBCONGTY.DUAN_1412107.maDA INTO maDA_Var FROM ownerDBCONGTY.DUAN_1412107, ownerDBCONGTY.CHITIEU_1412107
-        WHERE ownerDBCONGTY.DUAN_1412107.truongDA = maDA_Var;
+        WHERE ownerDBCONGTY.DUAN_1412107.truongDA = dangnhap;
      DBMS_SESSION.SET_CONTEXT('chitieu_ctx', 'maDA', maDA_Var);
   end if;
   EXCEPTION
@@ -32,6 +32,7 @@ CREATE OR REPLACE PACKAGE BODY chitieu_ctx_pkg IS
   END set_Po5;
 END;
 /
+
 --Create a Logon Trigger to Run the Application Context PL/SQL Package
 --connect sysadmin
 CREATE TRIGGER set_Po5_ctx_trig AFTER LOGON ON DATABASE
@@ -42,7 +43,7 @@ CREATE TRIGGER set_Po5_ctx_trig AFTER LOGON ON DATABASE
 drop trigger set_Po5_ctx_trig;
  --test the logon trigger should set the application context for the user
  --connect NS001, KH001 or any account to test
- SELECT SYS_CONTEXT('chitieu_ctx', 'MANV') maDA FROM DUAL;
+ SELECT SYS_CONTEXT('chitieu_ctx', 'maDA') maDA FROM DUAL;
  
  --connect sysadmin
  --create a PL/SQL function
@@ -53,14 +54,14 @@ drop trigger set_Po5_ctx_trig;
  AS
   chitieu_pred VARCHAR2 (400);
  BEGIN
-  chitieu_pred := 'maDA = SYS_CONTEXT("chitieu_ctx", "maDA")'; 
+  chitieu_pred := ' maDA = SYS_CONTEXT("chitieu_ctx", "maDA")'; 
  RETURN chitieu_pred;
 END;
 /
---connect NS001 t0 test
+--connect DANS001TR, DAKH001TR t0 test
 select * from OWNERDBCONGTY.CHITIEU_1412107;
---ok
 
+ --connect sysadmin
 --Create the New Security Policy
 BEGIN
  DBMS_RLS.ADD_POLICY (
@@ -70,7 +71,6 @@ BEGIN
   function_schema  => 'sysadmin',
   policy_function  => 'get_set_chitieu_infor', 
   statement_types  => 'select, insert, update'
-  --sec_relevant_cols => 'LUONG'
   );
 END;
 /
