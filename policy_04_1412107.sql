@@ -64,6 +64,7 @@ END;
 /
 --connect NS001 t0 test
 select * from OWNERDBCONGTY.NHANVIEN_1412107;
+--ok
 
 --Create the New Security Policy
 BEGIN
@@ -79,3 +80,4 @@ END;
 /
 --connect NS001 t0 test
 select * from OWNERDBCONGTY.NHANVIEN_1412107;
+--not ok
