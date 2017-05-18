@@ -1,8 +1,10 @@
 --connect sys
---create a account-ownerDBCONGTY owns database CONGTY
-GRANT CREATE SESSION TO ownerDBCONGTY IDENTIFIED BY ownerDBCONGTY;
-GRANT connect, resource to ownerDBCONGTY;
---connect as ownerDBCONGTY to create database
+--Create the administrative user, who will administer policies, procedures, database
+--connect as sys
+create user sysadmin_lab01 identified by sysadmin_lab01;
+grant create session to sysadmin_lab01;
+grant dba,connect to sysadmin_lab01;
+grant all privileges to sysadmin_lab01;
 
 --connect sys
 -----------------------tao tai khoan-------------------------------------
@@ -90,8 +92,3 @@ GRANT connect, resource to GD004;
 GRANT CREATE SESSION TO GD005 IDENTIFIED BY GD005;
 GRANT connect, resource to GD005;
 
---Create the administrative user, who will administer policies, procedures
---connect as sys
-GRANT CREATE SESSION, CREATE ANY CONTEXT, CREATE PROCEDURE, CREATE TRIGGER, ADMINISTER DATABASE TRIGGER TO sysadmin IDENTIFIED BY sysadmin;
-GRANT EXECUTE ON DBMS_SESSION TO sysadmin;
-GRANT EXECUTE ON DBMS_RLS TO sysadmin;
