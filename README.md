@@ -46,7 +46,7 @@ Liệt kê các **yêu cầu nâng cao** đã thực hiện:
 
 Link ảnh GIF demo ứng dụng:
 
-![Video Walkthrough](https://931ac2e3-a-62cb3a1a-s-sites.googlegroups.com/site/groupsevila/my/atnmlab01.gif?attachauth=ANoY7cqc55A1b8-_Qx9sZYNqSJP8dJwdyX0-3eKLt-YbNJrVYluV3RH_RrGBYFJvRPkedTgP-RoYUfjxlRDTr17oIsB39YoXQ8LWNd9INlj0PJUHOCY7I-WqwbC038_HySBeJ6KtmAyyy9wnEbcjZYr9rcnjLpCL1rfRR1nwqOtJG5ErfR9pIEgpQ9Vczkk9SJrtVzkh0hWKvuTAvwIgk0hUVceojT6zew%3D%3D&attredirects=0)
+![Video Walkthrough](https://photos-1.dropbox.com/t/2/AABpZHRCjoj9_Pskj1aMdkIf0cSnfBiJ6B_1Ed5AeSwqWA/12/341150620/jpeg/32x32/1/_/1/2/atnmlab01.gif/ENv67_oCGAEgBygH/9kbxW2XnAI6gcXF0MaA7nnKheaI02dNZ0mJ1Q6JA0eo%2C61mW6dJd8ZjN2S0lH829qdu5H2bm7eAKIMZuozs9C2o%2CKcn0nX25srKBS4YLHTDrQ8ArAwdbpm4n2TgrosX-p-Q?size=1280x960&size_mode=3)
 
 Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
 
