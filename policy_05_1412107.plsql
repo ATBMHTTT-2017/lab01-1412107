@@ -7,7 +7,7 @@ grant select, insert, update on DUAN to ROLE_TRUONGDUAN;
 --grant ROLE_TRUONGDUAN to cac truong du an
 --connect sys
 grant ROLE_TRUONGDUAN to DANS001TR, DAKH001TR, DADA001TR, DAKD001TR, DATT001TR;
---grant select, insert, update on DUAN to ROLE_TRUOONGDUAN
+--grant select, insert, update on CHITIEU to ROLE_TRUOONGDUAN
 --connect sysadmin_lab01
 grant select, insert, update on CHITIEU to ROLE_TRUONGDUAN;
 --test

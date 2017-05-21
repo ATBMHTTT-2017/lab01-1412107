@@ -8,3 +8,5 @@ grant select, insert, update on DUAN to ROLE_TRUONGPHONG;
 grant ROLE_TRUONGPHONG to NSTR, KHTR, DATR, KDTR, TTTR;
 --connect NSTR to test
 select * from sysadmin_lab01.DUAN;
+
+
