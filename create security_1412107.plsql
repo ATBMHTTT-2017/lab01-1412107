@@ -1,4 +1,4 @@
---connect sys
+ --connect sys
 --Create the administrative user, who will administer policies, procedures, database
 --connect as sys
 create user sysadmin_lab01 identified by sysadmin_lab01;

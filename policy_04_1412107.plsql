@@ -43,4 +43,4 @@ update_check => TRUE
 END;
 --connect NS001 to test
 select * from sysadmin_lab01.NHANVIEN;
-select MANV, HOTEN, DIACHI, DIENTHOAI, EMAIL, MAPHG, CHINHANH, MATKHAU from sysadmin_lab01.NHANVIEN;
+select MANV, HOTEN, DIACHI, DIENTHOAI, EMAIL, MAPHG, CHINHANH, MATKHAU from sysadmin_lab01.NHANVIEN; 

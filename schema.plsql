@@ -6,7 +6,7 @@ Create table PHONGBAN(
 	TENPHG nvarchar2(30),
 	TRPHG varchar2(15),
   NG_NHANCHUC date,
-	soNhanVien int,
+	soNhanVien int, 
   chiNhanh varchar2(15),
 	constraint PK_PHONGBAN primary key (MAPHG)
 );

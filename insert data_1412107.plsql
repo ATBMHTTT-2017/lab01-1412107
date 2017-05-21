@@ -1,5 +1,5 @@
 
---connect ownerDBCONGTY
+--connect ownerDBCONGTY 
 -------------------------------------3. insert data-------------------------------------------
 --1. CHINHANH
 Insert into CHINHANH values ('CN001', N'TP HCM', null);

@@ -1,4 +1,4 @@
---tao role ROEL_TRUONGDUAN, chua cac truong duan
+ --tao role ROEL_TRUONGDUAN, chua cac truong duan
 --connect sys
 create role ROLE_TRUONGDUAN;
 --grant select, insert, update on DUAN to ROLE_TRUOONGDUAN
